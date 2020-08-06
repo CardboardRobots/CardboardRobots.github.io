@@ -1,5 +1,7 @@
 FROM jekyll
 
-COPY ./src /src
+COPY . /
+
+RUN bundle install
 
 CMD jekyll build
